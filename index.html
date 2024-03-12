@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container"></div>
+    <script>
+      const container = document.querySelector(".container");
+      for (var i = 1; i <= 4; i++) {
+        const img = document.createElement("img");
+        img.src = `./img/${i}.png`;
+        container.append(img);
+      }
+    </script>
+  </body>
+</html>
